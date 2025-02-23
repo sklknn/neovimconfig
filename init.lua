@@ -4,10 +4,6 @@ require("config.lazy")
 require("vim-options")
 
 
-
-local builtin = require('telescope.builtin')
-
-
 local configs = require("nvim-treesitter.configs")
 
 configs.setup({
