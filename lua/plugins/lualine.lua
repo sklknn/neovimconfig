@@ -22,7 +22,6 @@ return {
                 lualine_y = {
                     {
                         'diagnostics',
-                    
                         sources = {'nvim_lsp', 'nvim_diagnostic', 'coc'},
 
                         sections = { 'error', 'warn', 'info', 'hint' },
