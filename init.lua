@@ -13,3 +13,6 @@ configs.setup({
 	indent = { enable = true },
 	auto_install = true,
 })
+
+--Neotree on loading
+--vim.cmd("Neotree toggle")

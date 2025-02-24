@@ -13,8 +13,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
---Neotree on loading
-vim.cmd("Neotree")
+
 --Toggle neotree on space-t
 vim.keymap.set('n', '<leader>t', ':Neotree toggle<CR>')
 
