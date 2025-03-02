@@ -28,18 +28,43 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({})
-			lspconfig.ansiblels.setup({})
-			lspconfig.azure_pipelines_ls.setup({})
-			lspconfig.bashls.setup({})
-			lspconfig.cssls.setup({})
-			lspconfig.docker_compose_language_service.setup({})
-			lspconfig.dockerls.setup({})
-			lspconfig.gopls.setup({})
-			lspconfig.terraformls.setup({})
-			lspconfig.tflint.setup({})
-			lspconfig.yamlls.setup({})
+	        local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+
+            local lspconfig = require("lspconfig")
+			lspconfig.lua_ls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.ansiblels.setup({
+                capabilities = capabilities
+            })
+			lspconfig.azure_pipelines_ls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.bashls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.cssls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.docker_compose_language_service.setup({
+                capabilities = capabilities
+            })
+			lspconfig.dockerls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.gopls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.terraformls.setup({
+                capabilities = capabilities
+            })
+			lspconfig.tflint.setup({
+                capabilities = capabilities
+            })
+			lspconfig.yamlls.setup({
+                capabilities = capabilities
+            })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
