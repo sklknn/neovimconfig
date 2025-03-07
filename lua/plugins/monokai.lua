@@ -13,8 +13,8 @@ return {
                 base3 = "#26233a",
                 base4 = "#6e6a86",
                 base5 = "#908caa",
-                -- base6 = '#9ca0a4',
-                -- base7 = '#b1b1b1',
+             -- base6 = '#9ca0a4',
+             -- base7 = '#b1b1b1',
                 border = "#524f67",
             },
         })
